@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/icon.css">
+    <title>YMOK-Quiz</title>
+    <link rel="icon" type="image/x-icon" href="src/image/yazaki.png">
+    <link rel="stylesheet" href="src/css/quiz.css">
+</head>
+
+<body>
+    <audio id="sound-correct" src="src/audio/correct.mp3"></audio>
+    <audio id="sound-incorrect" src="src/audio/incorrect.mp3"></audio>
+    <audio id="sound-flip" src="src/audio/flip.mp3"></audio>
+    <div class="container">
+        <div class="row1">
+            
+            <div class="col">
+                <img src="src/image/logo.png" class="logo" alt="" srcset="">
+            </div>
+            <div class="col" id="display-matricule">M: </div>
+            <div class="col">
+                <i class="fas fa-hourglass-half"></i>
+                <span id="time">10:00</span>
+            </div>
+            <div class="col">
+                <i class="fas fa-star"></i>
+                <span id="score">0</span>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col1">
+                <div class="card-container masquecard" id="card-container">
+                    <div class="flash-card">
+                        <div class="card-face front">
+                            <div class="row-2" id="question-title">Question</div>
+                            <div class="row row-3">
+                                <!-- Colonne Question et Réponses -->
+                                <div class="col">
+                                    <div class="question" id="question-text"></div>
+                                    <div class="answers" id="answers-container"></div>
+                                </div>
+                                <!-- Colonne Image (facultative) -->
+                                <div class="col imagflash">
+                                    <img src="src/image/11.png" alt="Question Image" id="question-image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Face arrière de la carte (pour feedback ou score) -->
+                        <div class="card-face back">
+                            <div id="feedback"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2"></div>
+        </div>
+    </div>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup">
+            <h2>Quiz Terminé !</h2>
+            <p id="popup-score"></p>
+            <p id="popup-time"></p>
+            <button id="close-popup">Fermer</button>
+        </div>
+    </div>
+    <script src="src/js/question.js"></script>
+    <script src="src/js/quiz.js"></script>
+</body>
+
+</html>

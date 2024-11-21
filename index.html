@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/normalize.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="scroll-down">
+        <div class="logo-container">
+            <div class="logo-titre">
+                <div>
+                    <img src="src/image/logo.png" class="logo" alt="Logo" />
+                    <h5>Quiz-Training</h5>
+                </div>
+                <div><img src="src/image/Monopoly.jpg" class="mono" alt="Logo" /></div>
+            </div>
+            <div>
+                <div class="presente">مرحبًا بالجميع في هذه اللعبة التدريبية المصممة خصيصًا لشركة يازاكي. مستوحاة من لعبة مونوبولي الشهيرة، تم تعديل هذه اللوحة لتشمل عناصر التدريب والتأهيل. تهدف هذه اللعبة إلى جعل الدورات التدريبية تفاعلية، تعليمية وترفيهية</div>
+                <div class="presente">Welcome everyone to this training game specially designed for Yazaki. Inspired by the popular Monopoly game, this board has been modified to include training and qualification elements. The goal of this game is to make training sessions interactive, educational and entertaining.</div>        
+            </div>          
+        </div>
+    </div>
+    <div class="container"></div>
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-left">
+                <button title="butt" class="icon-button close-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 
+                47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 
+                C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 
+                0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 
+                L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 
+                33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 
+                L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z" fill="grey">
+                        </path>
+                    </svg>
+                </button>
+                <h1 class="modal-title">Quiz!</h1>
+                <p class="modal-desc">Welcome everyone to this training game specially designed for Yazaki.</p>
+                <div class="input-block">
+                    <label for="Matricule" class="input-label">Matricule</label>
+                    <input type="Matricule" name="Matricule" id="Matricule" placeholder="Matricule">
+                </div>
+                <div class="modal-buttons">
+                    <label for="input-time">Time :</label>
+                    <select name="input-time" id="input-time">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10" selected>10</option> <!-- Valeur par défaut -->
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+
+                    <button type="button" class="input-button" id="loginButton">Login</button>
+                </div>
+                <p class="sign-up">Don't have an account? <a href="#">Let's go</a></p>
+            </div>
+            <div class="modal-right">
+                <img src="src/image/Monopoly.jpg" alt="">
+            </div>
+        </div>
+        <button class="modal-button">Click here to login</button>
+    </div>
+    <!-- partial -->
+    <script src="src/js/script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
