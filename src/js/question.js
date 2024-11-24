@@ -153,7 +153,7 @@
         question: "ما هو هذا العنصر ؟و ما هي أنواعه ؟",
         answers: [
             "Terminal : Femal Arceau",
-            "Terminal : Mal Femal Arceau",
+            "Terminal : Femal ",
             "conecteur : Mal Femal Arceau"
         ],
         correctAnswer: 1,
